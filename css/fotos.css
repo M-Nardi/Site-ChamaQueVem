@@ -1,0 +1,243 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+.menu{
+    width:100%;
+    height: 100%;
+    background-color: #222;
+    font-family: 'Arial';
+    font-size: 100%;
+}
+
+.menu ul{
+    list-style: none;
+    position: relative;
+}
+
+.menu ul li{
+    width: 16.6666666666%;
+    float: left;
+}
+
+.menu a{
+    padding: 8%;
+    display: block;
+    text-decoration:none;
+    text-align: center;
+    background-color: #222;
+    color: #fff;
+}
+
+/*  posição dos submenus*/
+.menu ul ul{
+    position:absolute;
+    visibility: hidden;
+    width: 16.666%;
+    z-index: 1000;
+
+}
+
+/* visibilidade dos submenus */
+.menu ul li:hover ul{
+    visibility: visible;
+}
+
+.menu a:hover{
+    background-color: floralwhite;
+    color: #555;
+}
+
+/* bordas do submenu */
+.menu ul ul li{
+    float: none;
+    border-bottom: solid 1px black;
+    width: 100%;
+}
+
+/* cor submenus */
+.menu ul ul li a{
+    background-color: darkorange;
+}
+/*--------------------------------fim menu nav-------------------------------------------*/
+#bannerr{
+    width: 100%;
+    height: auto;
+    border-bottom: solid 2px darkorange;
+    opacity: 0.85;
+    margin-bottom: -5px;
+}
+/*--------------------------------fim banner----------------------------------------------*/
+.norepeat{
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+}
+/*--------------------------------fim background----------------------------------------------*/
+footer{
+    width: 100%;
+    height: 150px;
+    background: #222;
+    border-top: solid 2px orange;
+    border-bottom: solid 2px orange;
+    margin-bottom: auto;
+}
+
+#rodape{
+    font-size: 0.9em;
+    font-family: "Arial";
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 10px;
+    max-width: 100%;
+}
+
+
+.face{
+    width: 27px;
+    float: left;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: -35px;
+    
+}
+
+.insta{
+    margin-left: 50px;
+    position: absolute;
+    width: 28px;
+    float: left;
+    margin-top: -35px
+}
+
+#rodape2{
+    clear: both;
+    float: left;
+    margin-left: 10px;
+    color: whitesmoke;
+    font-size: 0.8em;
+    margin-top: 1%;
+}
+/*-----------------MATERIAL DA PAGINA ABAIXO--------------------------------------------------------*/ 
+.boxfotos{
+    width: 75%;
+    height: auto;
+    margin-top: 8%;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+.boxfotos2{
+
+    width: 75%;
+    height: auto;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+   
+}
+    
+.imgbox{
+    margin-left: 5%;
+    margin-bottom: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    max-width: 55%;
+    border: solid 1.5px aliceblue;
+    border-radius: 10px;
+}    
+    
+h3{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    color: dimgrey;
+    font-size: 1.5em;
+    font-family:"Arial";
+    
+}
+
+.galeria{
+    max-width: 28.5%;
+    margin-bottom: 17%;
+    border-radius: 10px;
+
+    
+}
+
+.faixa{
+    width: 100%;
+    height: 2px;
+    background-color: dimgrey;
+}
+    
+    
+    
+    
+    
+
+/*-------------------------------------------------------------------------*/
+/* label menu responsivo*/
+
+@media(max-width:700px){
+    
+     
+    .menu ul li{
+        width: 95%;
+        float: none;
+    }
+    
+    .menu{
+        transition: all .3s;
+        border-bottom: 2px solid darkorange;
+    }
+    
+    .menu ul ul{
+        position: static;
+        overflow:visible;
+        max-height: 0;
+        transition: all .3s;
+        width: 100%;
+    }
+    
+    .menu ul li:hover ul{
+        height: auto;
+        max-height: 200px;
+    }
+    
+    .menu a{
+    padding: 2.5%;
+    display: block;
+    text-decoration:none;
+    text-align: center;
+    background-color: #222;
+    color: #fff;
+    width: 100%;
+    }
+    
+
+/*-----------------MATERIAL DA PAGINA ABAIXO--------------------------------------------------------*/    
+    
+    h3{
+        font-size: 0.95em;
+        text-align: center;
+        color: dimgrey;
+    }
+    
+    .galeria{
+    max-width: 60%;
+    margin-left: 22%;
+    margin-bottom: 11%;
+    border-radius: 4px;
+    margin-bottom: 1%;    
+    
+    }
+    
+    .imgbox{
+        margin-left: 11%;
+        max-width: 80% 
+    }
+    
+    
